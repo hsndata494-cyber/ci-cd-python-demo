@@ -16,4 +16,5 @@ def test_home_route():
     response = client.get("/")
     assert response.status_code == 200
     data = response.get_json()
-    assert data["message"] == "Hello CI/CD with Python"
+    assert data["message"] == "Hello CI/CD with Python - v2"
+
